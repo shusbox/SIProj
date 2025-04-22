@@ -22,6 +22,20 @@
             height: 20dvw;
             border-radius: 10px;
         }
+
+        .animal-element {
+            position: relative;
+        }
+
+        .overlay-gif {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100px;
+            height: 100px;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+        }
     </style>
 </head>
 <body>
@@ -35,13 +49,23 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-4">
-                  <img class="animal-img" src="./resource/img1.png" class="img-fluid" alt="이미지1">
+                    <div class="animal-element">
+                        <img class="animal-img" src="./resource/img1.png" class="img-fluid" alt="이미지1">
+                        <img src="./resource/gif.gif" class="overlay-gif">
+                        <p>Boneca Ambalabu</p>
+                    </div>
                 </div>
                 <div class="col-4">
-                  <img class="animal-img" src="./resource/img2.png" class="img-fluid" alt="이미지2">
+                    <div class="animal-element">
+                        <img class="animal-img" src="./resource/img2.png" class="img-fluid" alt="이미지2">
+                        <p>Lirilì Larilà</p>
+                    </div>
                 </div>
                 <div class="col-4">
-                  <img class="animal-img" src="./resource/img3.png" class="img-fluid" alt="이미지3">
+                    <div class="animal-element">
+                        <img class="animal-img" src="./resource/img3.png" class="img-fluid" alt="이미지3">
+                        <p>Bombardiro Crocodilo</p>
+                    </div>
                 </div>
               </div>
         </div>
