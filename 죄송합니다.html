@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .image {
+            text-align: center;
+        }
+        .move {
+            animation: rotate_image 1s linear infinite;
+            transform-origin: 50% 50%;
+        }
+        @keyframes rotate_image{
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <button id="test">버튼</button>
+    <div id="image" class="image">
+        <img src="/resource/img1.png" width="300px">
+    </div>
+
+    <script>
+        document.getElementById('test').addEventListener('click', function() {
+            document.getElementById('image').classList.toggle('move')
+        })
+    </script>
+</body>
+</html>
