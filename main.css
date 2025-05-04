@@ -1,0 +1,34 @@
+
+.title-font {
+    font-family: "Playwrite AU SA", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.animal-img {
+    display: block; 
+    width : 20dvw;
+    height: 20dvw;
+    border-radius: 10px;
+    margin:0 auto; 
+}
+
+.animal-element {
+    position: relative;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+
+.animal-element:hover {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.description-font {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 1000;
+    font-size: large;
+    font-style: normal;
+    text-align: center;
+}
